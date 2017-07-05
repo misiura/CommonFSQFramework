@@ -112,10 +112,11 @@ if __name__ == "__main__":
 
     # Exercise A.1
     sampleList = []
-    sampleList.append("QCD_Pt-15to3000_TuneZ2star_Flat_HFshowerLibrary_7TeV_pythia6")
-    sampleList.append("QCD_Pt-15to1000_TuneEE3C_Flat_7TeV_herwigpp")
-    sampleList.append("JetMETTau-Run2010A-Apr21ReReco-v1")
-
+    #sampleList.append("QCD_Pt-15to3000_TuneZ2star_Flat_HFshowerLibrary_7TeV_pythia6")
+    #sampleList.append("QCD_Pt-15to1000_TuneEE3C_Flat_7TeV_herwigpp")
+    #sampleList.append("JetMETTau-Run2010A-Apr21ReReco-v1")
+    
+    sampleList.append("data_FSQJets3")
     maxFilesMC = 1
     #maxFilesData = 1
     nWorkers = 4
@@ -126,7 +127,7 @@ if __name__ == "__main__":
 
 
     # use printTTree.py <sampleName> to see what trees are avaliable inside the skim file
-    SingleJet.runAll(treeName="mnXS",
+    SingleJet.runAll(treeName="JetTree",
            slaveParameters=slaveParams,
            sampleList=sampleList,
            maxFilesMC = maxFilesMC,

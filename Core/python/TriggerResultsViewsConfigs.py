@@ -90,6 +90,26 @@ def get(todo):
        FullTrack12 = cms.vstring("HLT_FullTrack12ForEndOfFill_v1")
     )
  
+    defs["DiPFJet15"]  = cms.PSet(
+       miniView = cms.string("TriggerResultsView"),
+       branchPrefix = cms.untracked.string("trg"),
+       process = cms.string("HLT"),
+       storePrescales = cms.bool(False),
+       triggers = cms.vstring("DiPFJet15","DiPFJet15_FBEta2"),
+       DiPFJet15 = cms.vstring("HLT_DiPFJet15_NoCaloMatched_v2"),
+       DiPFJet15_FBEta2 = cms.vstring("HLT_DiPFJet15_FBEta2_NoCaloMatched_v2")
+    )
+
+    defs["DiPFJet15_FBEta2"]  = cms.PSet(
+       miniView = cms.string("TriggerResultsView"),
+       branchPrefix = cms.untracked.string("trg2"),
+       process = cms.string("HLT"),
+       storePrescales = cms.bool(False),
+       triggers = cms.vstring("DiPFJet15_FBEta2"),
+       DiPFJet15_FBEta2 = cms.vstring("HLT_DiPFJet15_FBEta2_NoCaloMatched_v2")
+    )
+
+
     # main function
     ret = {}
     for t in todo:

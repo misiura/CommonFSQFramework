@@ -12,8 +12,9 @@ def get(todo):
         maxEta = cms.double(5.2),
         minPt = cms.double(3),
         maxnum = cms.int32(3),
-        input = cms.InputTag("selectedPatJetsAK4PFCHSCopy"),
-        variations= cms.vstring("", "jecUp", "jecDown"),
+        #input = cms.InputTag("selectedPatJetsAK4PFCHSCopy"),
+        input = cms.InputTag("slimmedJets"),
+	variations= cms.vstring("", "jecUp", "jecDown"),
         jerFactors = cms.vstring(  # PF10
                 "5.5 1 0.007 0.07 0.072"),
     )

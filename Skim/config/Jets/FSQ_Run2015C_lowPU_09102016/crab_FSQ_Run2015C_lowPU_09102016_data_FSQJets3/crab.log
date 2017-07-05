@@ -1,0 +1,1755 @@
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+Disabling MC-specific features for sample data_FSQJets3
+******************* RunOnData *******************
+************** MC dependence removal ************
+removing MC dependencies for photons
+removing MC dependencies for electrons
+removing MC dependencies for muons
+removing MC dependencies for taus
+removing MC dependencies for jets
+adding L2L3Residual JEC for: patJetCorrFactors
+************** MC dependence removal ************
+removing MC dependencies for photons
+removing MC dependencies for electrons
+removing MC dependencies for muons
+removing MC dependencies for taus
+removing MC dependencies for jets
+Customizing to:  data_FSQJets3
+
+################################################################################
+Ana version: FSQ_Run2015C_lowPU_09102016
+XS = -1
+isData = True
+################################################################################
+
+Setting globalTag to 76X_dataRun2_v15 for sample data_FSQJets3
+DEBUG 2016-10-09 14:26:40,928: 	 Executing command: 'submit'
+DEBUG 2016-10-09 14:26:40,929: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:26:40,933: 	 Checking credentials
+DEBUG 2016-10-09 14:26:40,933: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:26:40,933: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:26:41,438: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 36318
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:41,842: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 36318
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:41,842: 	 Proxy valid for 10:05:18 hours
+INFO 2016-10-09 14:26:41,843: 	 Will use CRAB configuration file tmp.py
+DEBUG 2016-10-09 14:26:41,843: 	 Loading CRAB configuration file.
+DEBUG 2016-10-09 14:26:41,846: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-10-09 14:26:42,091: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:42,092: 	 Checking credentials
+DEBUG 2016-10-09 14:26:42,092: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:26:42,092: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:26:42,495: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 36317
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:42,898: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 36317
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:42,898: 	 Proxy valid for 10:05:17 hours
+DEBUG 2016-10-09 14:26:43,302: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u57680 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:43,641: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:26:43,747: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:43,747: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:26:43,747: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:26:44,151: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:53:51  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:44,152: 	 Myproxy is valid: 2498031
+DEBUG 2016-10-09 14:26:44,152: 	 Command use: submit
+DEBUG 2016-10-09 14:26:44,152: 	 Options use: ['-c', 'tmp.py']
+DEBUG 2016-10-09 14:26:44,529: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:26:44,529: 	 Instance is prod
+DEBUG 2016-10-09 14:26:44,529: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:26:44,529: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:26:44,529: 	 Started submission
+DEBUG 2016-10-09 14:26:44,529: 	 Working on /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:26:44,946: 	 Loading required information from the environment
+DEBUG 2016-10-09 14:26:44,946: 	 Found CMSSW_7_6_6 for slc6_amd64_gcc493 with base /afs/cern.ch/user/m/misiura/CMSSW_7_6_6
+DEBUG 2016-10-09 14:26:44,956: 	 UNIQUE NAME: tarUUID b7e453af-d6ac-4ce2-8dee-77ba924e307f 
+DEBUG 2016-10-09 14:26:44,956: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('User')
+config.section_('General')
+config.General.workArea = 'FSQ_Run2015C_lowPU_09102016'
+config.General.requestName = 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3'
+config.section_('JobType')
+config.JobType.psetName = 'S0_makePAT_76.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/FSQJets3/Run2015C_25ns-16Dec2015-v1/MINIAOD'
+config.Data.unitsPerJob = 10
+config.Data.outputDatasetTag = 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3'
+config.Data.splitting = 'LumiBased'
+config.Data.lumiMask = '/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/lumi/Cert_254986-255031_13TeV_PromptReco_Collisions15_LOWPU_25ns_JSON.txt'
+config.section_('Site')
+config.Site.storageSite = 'T2_PL_Swierk'
+
+DEBUG 2016-10-09 14:26:44,956: 	 self.config.JobType.psetName: S0_makePAT_76.py
+INFO 2016-10-09 14:26:44,956: 	 Importing CMSSW configuration S0_makePAT_76.py
+INFO 2016-10-09 14:26:46,387: 	 Finished importing CMSSW configuration S0_makePAT_76.py
+DEBUG 2016-10-09 14:26:46,387: 	 Writing CMSSW configuration to /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/inputs/PSet.py
+DEBUG 2016-10-09 14:26:46,769: 	 The following EDM output files will be collected: ['mnTrgAna_PAT.root']
+DEBUG 2016-10-09 14:26:46,769: 	 The following TFile output files will be collected: ['trees.root']
+DEBUG 2016-10-09 14:26:46,769: 	 The following user output files will be collected: []
+DEBUG 2016-10-09 14:26:46,769: 	 Loading required information from the environment
+DEBUG 2016-10-09 14:26:46,769: 	 Found CMSSW_7_6_6 for slc6_amd64_gcc493 with base /afs/cern.ch/user/m/misiura/CMSSW_7_6_6
+DEBUG 2016-10-09 14:26:46,769: 	 Making tarball in /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/inputs/b7e453af-d6ac-4ce2-8dee-77ba924e307fdefault.tgz
+DEBUG 2016-10-09 14:26:46,801: 	 Checking directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/lib
+DEBUG 2016-10-09 14:26:46,801: 	 Adding directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/lib to tarball
+DEBUG 2016-10-09 14:26:47,033: 	 Checking directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/biglib
+DEBUG 2016-10-09 14:26:47,033: 	 Adding directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/biglib to tarball
+DEBUG 2016-10-09 14:26:47,034: 	 Checking directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/module
+DEBUG 2016-10-09 14:26:47,045: 	 Adding data directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Core/interface to tarball
+DEBUG 2016-10-09 14:26:47,058: 	 Adding data directory /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Core/test/MNxsectionAna/data to tarball
+DEBUG 2016-10-09 14:26:47,208: 	 Uploading archive /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/inputs/b7e453af-d6ac-4ce2-8dee-77ba924e307fdefault.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-10-09 14:26:47,706: 	 Loading required information from the environment
+DEBUG 2016-10-09 14:26:47,706: 	 Found CMSSW_7_6_6 for slc6_amd64_gcc493 with base /afs/cern.ch/user/m/misiura/CMSSW_7_6_6
+DEBUG 2016-10-09 14:26:47,707: 	 Making tarball in /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/inputs/debugFiles.tgz
+DEBUG 2016-10-09 14:26:47,710: 	 Uploading archive /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/inputs/debugFiles.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-10-09 14:26:48,037: 	 Result uploading input files: 05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz 
+DEBUG 2016-10-09 14:26:48,037: 	 Attaching lumi mask /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/lumi/Cert_254986-255031_13TeV_PromptReco_Collisions15_LOWPU_25ns_JSON.txt to the request
+DEBUG 2016-10-09 14:26:48,037: 	 Reading lumi-mask from /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/lumi/Cert_254986-255031_13TeV_PromptReco_Collisions15_LOWPU_25ns_JSON.txt
+WARNING 2016-10-09 14:26:48,037: 	 Warning: The following output files will not be published, as they are not EDM files: ['trees.root']
+INFO 2016-10-09 14:26:48,038: 	 Sending the request to the server
+DEBUG 2016-10-09 14:26:48,038: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_PL_Swierk', 'algoargs': 10, 'cachefilename': '05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_7_6_6', 'edmoutfiles': ['mnTrgAna_PAT.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/FSQJets3/Run2015C_25ns-16Dec2015-v1/MINIAOD', 'dryrun': 0, 'workflow': 'crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'adduserfiles': [], 'jobarch': 'slc6_amd64_gcc493', 'lumis': ['1,120,153,214', '1,28', '4,35,40,414', '1,34,36,209,306,325,327,343'], 'nonprodsw': 0, 'tfileoutfiles': ['trees.root'], 'oneEventMode': 0, 'debugfilename': 'fbb9f46d5ad234a842ab8550686633f79dcd257675466ca66e20daccf24329b5.tar.gz', 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 1, 'runs': [u'254989', u'254993', u'255019', u'255029'], 'totalunits': 0, 'splitalgo': 'LumiBased', 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3'} 
+DEBUG 2016-10-09 14:26:48,038: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_PL_Swierk&algoargs=10&cachefilename=05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_7_6_6&primarydataset=&inputdata=%2FFSQJets3%2FRun2015C_25ns-16Dec2015-v1%2FMINIAOD&dryrun=0&workflow=crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3&jobarch=slc6_amd64_gcc493&nonprodsw=0&oneEventMode=0&debugfilename=fbb9f46d5ad234a842ab8550686633f79dcd257675466ca66e20daccf24329b5.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=1&totalunits=0&splitalgo=LumiBased&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=FSQ_Run2015C_lowPU_09102016_data_FSQJets3&tfileoutfiles=trees.root&edmoutfiles=mnTrgAna_PAT.root&runs=254989&runs=254993&runs=255019&runs=255029&lumis=1%2C120%2C153%2C214&lumis=1%2C28&lumis=4%2C35%2C40%2C414&lumis=1%2C34%2C36%2C209%2C306%2C325%2C327%2C343
+DEBUG 2016-10-09 14:26:48,759: 	 Result: {'result': [{'RequestName': '161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3'}]}
+INFO 2016-10-09 14:26:48,761: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2016-10-09 14:26:48,762: 	 Task name: 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:26:48,762: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2016-10-09 14:26:48,762: 	 About to return
+INFO 2016-10-09 14:26:48,763: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:26:58,768: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:26:58,768: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:26:58,772: 	 Checking credentials
+DEBUG 2016-10-09 14:26:58,773: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:26:58,773: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:26:59,178: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 36300
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:59,582: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 36300
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:59,582: 	 Proxy valid for 10:05:00 hours
+DEBUG 2016-10-09 14:26:59,749: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:26:59,749: 	 Checking credentials
+DEBUG 2016-10-09 14:26:59,749: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:26:59,749: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:27:00,153: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 36299
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:27:00,656: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 36299
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:27:00,656: 	 Proxy valid for 10:04:59 hours
+DEBUG 2016-10-09 14:27:01,020: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:27:01,127: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:27:01,127: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:27:01,127: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:27:01,231: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:53:34  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:27:01,232: 	 Myproxy is valid: 2498014
+DEBUG 2016-10-09 14:27:01,232: 	 Command use: status
+DEBUG 2016-10-09 14:27:01,232: 	 Options use: []
+DEBUG 2016-10-09 14:27:01,655: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:27:01,655: 	 Instance is prod
+DEBUG 2016-10-09 14:27:01,655: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:27:01,655: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:27:01,655: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:27:02,073: 	 {'status': 'NEW', 'username': 'mmisiura', 'totalJobdefs': 0, 'jobsPerStatus': {}, 'taskWarningMsg': [], 'schedd': '', 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'command': 'SUBMIT', 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': []}
+INFO 2016-10-09 14:27:02,073: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:27:02,073: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:27:02,073: 	 Task status:			NEW on command SUBMIT
+INFO 2016-10-09 14:27:02,073: 	 
+No jobs created yet!
+INFO 2016-10-09 14:27:02,075: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:35:10,090: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:35:10,091: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:35:10,103: 	 Checking credentials
+DEBUG 2016-10-09 14:35:10,104: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:35:10,104: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:35:10,610: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35809
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:11,014: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35809
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:11,015: 	 Proxy valid for 09:56:49 hours
+DEBUG 2016-10-09 14:35:11,265: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:11,266: 	 Checking credentials
+DEBUG 2016-10-09 14:35:11,266: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:35:11,266: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:35:11,669: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35808
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:12,073: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35807
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:12,073: 	 Proxy valid for 09:56:48 hours
+DEBUG 2016-10-09 14:35:12,430: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:35:12,536: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:12,537: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:35:12,537: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:35:13,140: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:45:22  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:35:13,141: 	 Myproxy is valid: 2497522
+DEBUG 2016-10-09 14:35:13,141: 	 Command use: status
+DEBUG 2016-10-09 14:35:13,141: 	 Options use: []
+DEBUG 2016-10-09 14:35:13,476: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:35:13,476: 	 Instance is prod
+DEBUG 2016-10-09 14:35:13,476: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:35:13,476: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:35:13,476: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:35:17,947: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 87}, 'jobs': {'24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '4': {'State': 'running'}, '8': {'State': 'running'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'running'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '82': {'State': 'running'}, '83': {'State': 'running'}, '80': {'State': 'running'}, '81': {'State': 'running'}, '86': {'State': 'running'}, '87': {'State': 'running'}, '84': {'State': 'running'}, '85': {'State': 'running'}, '3': {'State': 'running'}, '7': {'State': 'running'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '60': {'State': 'running'}, '61': {'State': 'running'}, '62': {'State': 'running'}, '63': {'State': 'running'}, '64': {'State': 'running'}, '65': {'State': 'running'}, '66': {'State': 'running'}, '67': {'State': 'running'}, '68': {'State': 'running'}, '69': {'State': 'running'}, '2': {'State': 'running'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'running'}, '5': {'State': 'running'}, '9': {'State': 'running'}, '77': {'State': 'running'}, '76': {'State': 'running'}, '75': {'State': 'running'}, '74': {'State': 'running'}, '73': {'State': 'running'}, '72': {'State': 'running'}, '71': {'State': 'running'}, '70': {'State': 'running'}, '79': {'State': 'running'}, '78': {'State': 'running'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['running', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['running', 4], ['running', 8], ['running', 59], ['running', 58], ['running', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['running', 82], ['running', 83], ['running', 80], ['running', 81], ['running', 86], ['running', 87], ['running', 84], ['running', 85], ['running', 3], ['running', 7], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['running', 60], ['running', 61], ['running', 62], ['running', 63], ['running', 64], ['running', 65], ['running', 66], ['running', 67], ['running', 68], ['running', 69], ['running', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['running', 1], ['running', 5], ['running', 9], ['running', 77], ['running', 76], ['running', 75], ['running', 74], ['running', 73], ['running', 72], ['running', 71], ['running', 70], ['running', 79], ['running', 78]]}
+INFO 2016-10-09 14:35:17,947: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:35:17,947: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:35:17,947: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:35:17,947: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:35:17,947: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:35:17,948: 	 
+Jobs status:			running       100.0% (87/87)
+INFO 2016-10-09 14:35:17,948: 	 
+No publication information available yet
+INFO 2016-10-09 14:35:17,951: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:37:27,974: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:37:27,974: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:37:27,980: 	 Checking credentials
+DEBUG 2016-10-09 14:37:27,980: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:37:27,980: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:37:28,384: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35671
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:28,788: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35671
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:28,788: 	 Proxy valid for 09:54:31 hours
+DEBUG 2016-10-09 14:37:29,054: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:29,055: 	 Checking credentials
+DEBUG 2016-10-09 14:37:29,055: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:37:29,055: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:37:29,458: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35670
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:29,861: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35670
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:29,861: 	 Proxy valid for 09:54:30 hours
+DEBUG 2016-10-09 14:37:30,234: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:37:30,340: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:30,340: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:37:30,340: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:37:31,644: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:43:04  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:37:31,645: 	 Myproxy is valid: 2497384
+DEBUG 2016-10-09 14:37:31,645: 	 Command use: status
+DEBUG 2016-10-09 14:37:31,645: 	 Options use: []
+DEBUG 2016-10-09 14:37:32,101: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:37:32,101: 	 Instance is prod
+DEBUG 2016-10-09 14:37:32,101: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:37:32,101: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:37:32,101: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:37:35,790: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 87}, 'jobs': {'24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '4': {'State': 'running'}, '8': {'State': 'running'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'running'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '82': {'State': 'running'}, '83': {'State': 'running'}, '80': {'State': 'running'}, '81': {'State': 'running'}, '86': {'State': 'running'}, '87': {'State': 'running'}, '84': {'State': 'running'}, '85': {'State': 'running'}, '3': {'State': 'running'}, '7': {'State': 'running'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '60': {'State': 'running'}, '61': {'State': 'running'}, '62': {'State': 'running'}, '63': {'State': 'running'}, '64': {'State': 'running'}, '65': {'State': 'running'}, '66': {'State': 'running'}, '67': {'State': 'running'}, '68': {'State': 'running'}, '69': {'State': 'running'}, '2': {'State': 'running'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'running'}, '5': {'State': 'running'}, '9': {'State': 'running'}, '77': {'State': 'running'}, '76': {'State': 'running'}, '75': {'State': 'running'}, '74': {'State': 'running'}, '73': {'State': 'running'}, '72': {'State': 'running'}, '71': {'State': 'running'}, '70': {'State': 'running'}, '79': {'State': 'running'}, '78': {'State': 'running'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['running', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['running', 4], ['running', 8], ['running', 59], ['running', 58], ['running', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['running', 82], ['running', 83], ['running', 80], ['running', 81], ['running', 86], ['running', 87], ['running', 84], ['running', 85], ['running', 3], ['running', 7], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['running', 60], ['running', 61], ['running', 62], ['running', 63], ['running', 64], ['running', 65], ['running', 66], ['running', 67], ['running', 68], ['running', 69], ['running', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['running', 1], ['running', 5], ['running', 9], ['running', 77], ['running', 76], ['running', 75], ['running', 74], ['running', 73], ['running', 72], ['running', 71], ['running', 70], ['running', 79], ['running', 78]]}
+INFO 2016-10-09 14:37:35,790: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:37:35,790: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:37:35,790: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:37:35,790: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:37:35,790: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:37:35,791: 	 
+Jobs status:			running       100.0% (87/87)
+INFO 2016-10-09 14:37:35,791: 	 
+No publication information available yet
+INFO 2016-10-09 14:37:35,792: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:41:02,125: 	 Executing command: 'getoutput'
+DEBUG 2016-10-09 14:41:02,125: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:41:02,130: 	 Checking credentials
+DEBUG 2016-10-09 14:41:02,130: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:41:02,130: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:41:02,633: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35457
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:03,037: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35456
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:03,037: 	 Proxy valid for 09:50:57 hours
+DEBUG 2016-10-09 14:41:03,038: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2016-10-09 14:41:03,160: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:03,161: 	 Checking credentials
+DEBUG 2016-10-09 14:41:03,161: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:41:03,161: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:41:03,564: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35456
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:03,968: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35456
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:03,968: 	 Proxy valid for 09:50:56 hours
+DEBUG 2016-10-09 14:41:04,372: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u57680 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:04,777: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:41:04,883: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:04,884: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:41:04,884: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:41:05,387: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:39:30  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:41:05,388: 	 Myproxy is valid: 2497170
+DEBUG 2016-10-09 14:41:05,388: 	 Command use: getoutput
+DEBUG 2016-10-09 14:41:05,388: 	 Options use: ['--dump', 'FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3']
+DEBUG 2016-10-09 14:41:05,839: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:41:05,839: 	 Instance is prod
+DEBUG 2016-10-09 14:41:05,839: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:41:05,839: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:41:06,261: 	 Server result: {'result': ['161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'SUBMITTED', '2016-10-09 12:26:48.750650', 'None', '2016-10-09 12:27:49.516479', 'None', 'CMSSW_7_6_6', 'slc6_amd64_gcc493', '/FSQJets3/Run2015C_25ns-16Dec2015-v1/MINIAOD', '[]', '[]', 'LumiBased', "{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,120,153,214', '1,28', '4,35,40,414', '1,34,36,209,306,325,327,343'], 'runs': ['254989', '254993', '255019', '255029'], 'lumis_per_job': 10}", '0', '05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz', 'https://cmsweb.cern.ch/crabcache', 'mmisiura', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura', 'cms', 'None', 'None', 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3-00000000000000000000000000000000', 'T2_PL_Swierk', 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', 'Analysis', '{}', '[]', 'F', 'vocms052', '[]', '1250', '1', '2000', '10', 'None', 'http://submit-6.t2.ucsd.edu/CSstoragePath/47/uscms3269/161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'None', '[]', '[]', '[]', 'pythia', '[]', "['trees.root']", "['mnTrgAna_PAT.root']", 'https://cmsweb.cern.ch/couchdb2', 'None', '0', 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'crab3@submit-6.t2.ucsd.edu', 'F', '[]', 'T', '/store/user/mmisiura/', 'F', 'None', 'F', 'F', 'F', 'None', 'FSQJets3', 'asodb1', 'SUBMIT', '1159302', 'fbb9f46d5ad234a842ab8550686633f79dcd257675466ca66e20daccf24329b5.tar.gz'], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_totalunits', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_job_type', 'tm_arguments', 'panda_resubmitted_jobs', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_user_webdir', 'tm_activity', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_task_warnings', 'tm_generator', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_asourl', 'tm_events_per_lumi', 'tm_use_parent', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_publish_groupname', 'tm_nonvalid_input_dataset', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_asodb', 'tm_task_command', 'clusterid', 'tm_debug_files']}}
+DEBUG 2016-10-09 14:41:06,261: 	 Retrieving locations for task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:41:06,261: 	 Retrieving all file locations
+DEBUG 2016-10-09 14:41:13,934: 	 Server result: {'result': [], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_task_command', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_args', 'panda_resubmitted_jobs', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_asourl', 'tm_asodb', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'clusterid', 'tm_start_time']}}
+INFO 2016-10-09 14:41:13,935: 	 No files to retrieve.
+DEBUG 2016-10-09 14:41:13,936: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:42:15,672: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:42:15,672: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:42:15,677: 	 Checking credentials
+DEBUG 2016-10-09 14:42:15,678: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:42:15,678: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:42:16,181: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35383
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:16,584: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35383
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:16,584: 	 Proxy valid for 09:49:43 hours
+DEBUG 2016-10-09 14:42:16,701: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:16,702: 	 Checking credentials
+DEBUG 2016-10-09 14:42:16,702: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:42:16,702: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:42:17,105: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35382
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:17,509: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35382
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:17,509: 	 Proxy valid for 09:49:42 hours
+DEBUG 2016-10-09 14:42:17,854: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:42:17,961: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:17,961: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:42:17,961: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:42:18,465: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:38:17  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:42:18,467: 	 Myproxy is valid: 2497097
+DEBUG 2016-10-09 14:42:18,467: 	 Command use: status
+DEBUG 2016-10-09 14:42:18,467: 	 Options use: []
+DEBUG 2016-10-09 14:42:18,819: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:42:18,819: 	 Instance is prod
+DEBUG 2016-10-09 14:42:18,819: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:42:18,819: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:42:18,820: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:42:27,566: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 87}, 'jobs': {'24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '4': {'State': 'running'}, '8': {'State': 'running'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'running'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '82': {'State': 'running'}, '83': {'State': 'running'}, '80': {'State': 'running'}, '81': {'State': 'running'}, '86': {'State': 'running'}, '87': {'State': 'running'}, '84': {'State': 'running'}, '85': {'State': 'running'}, '3': {'State': 'running'}, '7': {'State': 'running'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '60': {'State': 'running'}, '61': {'State': 'running'}, '62': {'State': 'running'}, '63': {'State': 'running'}, '64': {'State': 'running'}, '65': {'State': 'running'}, '66': {'State': 'running'}, '67': {'State': 'running'}, '68': {'State': 'running'}, '69': {'State': 'running'}, '2': {'State': 'running'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'running'}, '5': {'State': 'running'}, '9': {'State': 'running'}, '77': {'State': 'running'}, '76': {'State': 'running'}, '75': {'State': 'running'}, '74': {'State': 'running'}, '73': {'State': 'running'}, '72': {'State': 'running'}, '71': {'State': 'running'}, '70': {'State': 'running'}, '79': {'State': 'running'}, '78': {'State': 'running'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['running', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['running', 4], ['running', 8], ['running', 59], ['running', 58], ['running', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['running', 82], ['running', 83], ['running', 80], ['running', 81], ['running', 86], ['running', 87], ['running', 84], ['running', 85], ['running', 3], ['running', 7], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['running', 60], ['running', 61], ['running', 62], ['running', 63], ['running', 64], ['running', 65], ['running', 66], ['running', 67], ['running', 68], ['running', 69], ['running', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['running', 1], ['running', 5], ['running', 9], ['running', 77], ['running', 76], ['running', 75], ['running', 74], ['running', 73], ['running', 72], ['running', 71], ['running', 70], ['running', 79], ['running', 78]]}
+INFO 2016-10-09 14:42:27,566: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:42:27,566: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:42:27,566: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:42:27,566: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:42:27,566: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:42:27,566: 	 
+Jobs status:			running       100.0% (87/87)
+INFO 2016-10-09 14:42:27,566: 	 
+No publication information available yet
+INFO 2016-10-09 14:42:27,568: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:44:39,736: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:44:39,736: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:44:39,741: 	 Checking credentials
+DEBUG 2016-10-09 14:44:39,741: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:44:39,741: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:44:40,144: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35239
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:40,551: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35239
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:40,551: 	 Proxy valid for 09:47:19 hours
+DEBUG 2016-10-09 14:44:40,672: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:40,673: 	 Checking credentials
+DEBUG 2016-10-09 14:44:40,673: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:44:40,673: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:44:41,076: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35238
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:41,480: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35238
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:41,480: 	 Proxy valid for 09:47:18 hours
+DEBUG 2016-10-09 14:44:41,897: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:44:42,003: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:42,003: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:44:42,003: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:44:42,407: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:35:53  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:44:42,408: 	 Myproxy is valid: 2496953
+DEBUG 2016-10-09 14:44:42,408: 	 Command use: status
+DEBUG 2016-10-09 14:44:42,408: 	 Options use: []
+DEBUG 2016-10-09 14:44:59,299: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:44:59,300: 	 Instance is prod
+DEBUG 2016-10-09 14:44:59,300: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:44:59,300: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:44:59,300: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:45:12,335: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 87}, 'jobs': {'24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '4': {'State': 'running'}, '8': {'State': 'running'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'running'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '82': {'State': 'running'}, '83': {'State': 'running'}, '80': {'State': 'running'}, '81': {'State': 'running'}, '86': {'State': 'running'}, '87': {'State': 'running'}, '84': {'State': 'running'}, '85': {'State': 'running'}, '3': {'State': 'running'}, '7': {'State': 'running'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '60': {'State': 'running'}, '61': {'State': 'running'}, '62': {'State': 'running'}, '63': {'State': 'running'}, '64': {'State': 'running'}, '65': {'State': 'running'}, '66': {'State': 'running'}, '67': {'State': 'running'}, '68': {'State': 'running'}, '69': {'State': 'running'}, '2': {'State': 'running'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'running'}, '5': {'State': 'running'}, '9': {'State': 'running'}, '77': {'State': 'running'}, '76': {'State': 'running'}, '75': {'State': 'running'}, '74': {'State': 'running'}, '73': {'State': 'running'}, '72': {'State': 'running'}, '71': {'State': 'running'}, '70': {'State': 'running'}, '79': {'State': 'running'}, '78': {'State': 'running'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['running', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['running', 4], ['running', 8], ['running', 59], ['running', 58], ['running', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['running', 82], ['running', 83], ['running', 80], ['running', 81], ['running', 86], ['running', 87], ['running', 84], ['running', 85], ['running', 3], ['running', 7], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['running', 60], ['running', 61], ['running', 62], ['running', 63], ['running', 64], ['running', 65], ['running', 66], ['running', 67], ['running', 68], ['running', 69], ['running', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['running', 1], ['running', 5], ['running', 9], ['running', 77], ['running', 76], ['running', 75], ['running', 74], ['running', 73], ['running', 72], ['running', 71], ['running', 70], ['running', 79], ['running', 78]]}
+INFO 2016-10-09 14:45:12,335: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:45:12,335: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:45:12,335: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:45:12,335: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:45:12,335: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:45:12,335: 	 
+Jobs status:			running       100.0% (87/87)
+INFO 2016-10-09 14:45:12,336: 	 
+No publication information available yet
+INFO 2016-10-09 14:45:12,337: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:47:07,300: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:47:07,300: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:47:07,305: 	 Checking credentials
+DEBUG 2016-10-09 14:47:07,306: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:47:07,306: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:47:07,711: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35092
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:08,116: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35091
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:08,116: 	 Proxy valid for 09:44:52 hours
+DEBUG 2016-10-09 14:47:08,255: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:08,255: 	 Checking credentials
+DEBUG 2016-10-09 14:47:08,255: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:47:08,255: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:47:08,658: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 35091
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:09,062: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 35091
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:09,062: 	 Proxy valid for 09:44:51 hours
+DEBUG 2016-10-09 14:47:09,434: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:47:09,539: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:09,539: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:47:09,539: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:47:09,943: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:33:26  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:47:09,943: 	 Myproxy is valid: 2496806
+DEBUG 2016-10-09 14:47:09,943: 	 Command use: status
+DEBUG 2016-10-09 14:47:09,943: 	 Options use: []
+DEBUG 2016-10-09 14:47:10,339: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:47:10,339: 	 Instance is prod
+DEBUG 2016-10-09 14:47:10,339: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:47:10,339: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:47:10,339: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:47:14,285: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 87}, 'jobs': {'24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '4': {'State': 'running'}, '8': {'State': 'running'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'running'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '82': {'State': 'running'}, '83': {'State': 'running'}, '80': {'State': 'running'}, '81': {'State': 'running'}, '86': {'State': 'running'}, '87': {'State': 'running'}, '84': {'State': 'running'}, '85': {'State': 'running'}, '3': {'State': 'running'}, '7': {'State': 'running'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '60': {'State': 'running'}, '61': {'State': 'running'}, '62': {'State': 'running'}, '63': {'State': 'running'}, '64': {'State': 'running'}, '65': {'State': 'running'}, '66': {'State': 'running'}, '67': {'State': 'running'}, '68': {'State': 'running'}, '69': {'State': 'running'}, '2': {'State': 'running'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'running'}, '5': {'State': 'running'}, '9': {'State': 'running'}, '77': {'State': 'running'}, '76': {'State': 'running'}, '75': {'State': 'running'}, '74': {'State': 'running'}, '73': {'State': 'running'}, '72': {'State': 'running'}, '71': {'State': 'running'}, '70': {'State': 'running'}, '79': {'State': 'running'}, '78': {'State': 'running'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['running', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['running', 4], ['running', 8], ['running', 59], ['running', 58], ['running', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['running', 82], ['running', 83], ['running', 80], ['running', 81], ['running', 86], ['running', 87], ['running', 84], ['running', 85], ['running', 3], ['running', 7], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['running', 60], ['running', 61], ['running', 62], ['running', 63], ['running', 64], ['running', 65], ['running', 66], ['running', 67], ['running', 68], ['running', 69], ['running', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['running', 1], ['running', 5], ['running', 9], ['running', 77], ['running', 76], ['running', 75], ['running', 74], ['running', 73], ['running', 72], ['running', 71], ['running', 70], ['running', 79], ['running', 78]]}
+INFO 2016-10-09 14:47:14,285: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:47:14,285: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:47:14,285: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:47:14,285: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:47:14,285: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:47:14,285: 	 
+Jobs status:			running       100.0% (87/87)
+INFO 2016-10-09 14:47:14,286: 	 
+No publication information available yet
+INFO 2016-10-09 14:47:14,287: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:49:06,300: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:49:06,300: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:49:06,306: 	 Checking credentials
+DEBUG 2016-10-09 14:49:06,307: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:49:06,307: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:49:06,712: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34973
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:07,118: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34972
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:07,118: 	 Proxy valid for 09:42:53 hours
+DEBUG 2016-10-09 14:49:07,237: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:07,237: 	 Checking credentials
+DEBUG 2016-10-09 14:49:07,237: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:49:07,237: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:49:07,641: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34972
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:08,045: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34972
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:08,045: 	 Proxy valid for 09:42:52 hours
+DEBUG 2016-10-09 14:49:08,733: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:49:08,839: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:08,839: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:49:08,839: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:49:09,042: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:31:27  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:49:09,042: 	 Myproxy is valid: 2496687
+DEBUG 2016-10-09 14:49:09,042: 	 Command use: status
+DEBUG 2016-10-09 14:49:09,043: 	 Options use: []
+DEBUG 2016-10-09 14:49:48,315: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:49:48,315: 	 Instance is prod
+DEBUG 2016-10-09 14:49:48,316: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:49:48,316: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:49:48,316: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:50:18,876: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 87}, 'jobs': {'24': {'State': 'running'}, '25': {'State': 'running'}, '26': {'State': 'running'}, '27': {'State': 'running'}, '20': {'State': 'running'}, '21': {'State': 'running'}, '22': {'State': 'running'}, '23': {'State': 'running'}, '28': {'State': 'running'}, '29': {'State': 'running'}, '4': {'State': 'running'}, '8': {'State': 'running'}, '59': {'State': 'running'}, '58': {'State': 'running'}, '55': {'State': 'running'}, '54': {'State': 'running'}, '57': {'State': 'running'}, '56': {'State': 'running'}, '51': {'State': 'running'}, '50': {'State': 'running'}, '53': {'State': 'running'}, '52': {'State': 'running'}, '82': {'State': 'running'}, '83': {'State': 'running'}, '80': {'State': 'running'}, '81': {'State': 'running'}, '86': {'State': 'running'}, '87': {'State': 'running'}, '84': {'State': 'running'}, '85': {'State': 'running'}, '3': {'State': 'running'}, '7': {'State': 'running'}, '39': {'State': 'running'}, '38': {'State': 'running'}, '33': {'State': 'running'}, '32': {'State': 'running'}, '31': {'State': 'running'}, '30': {'State': 'running'}, '37': {'State': 'running'}, '36': {'State': 'running'}, '35': {'State': 'running'}, '34': {'State': 'running'}, '60': {'State': 'running'}, '61': {'State': 'running'}, '62': {'State': 'running'}, '63': {'State': 'running'}, '64': {'State': 'running'}, '65': {'State': 'running'}, '66': {'State': 'running'}, '67': {'State': 'running'}, '68': {'State': 'running'}, '69': {'State': 'running'}, '2': {'State': 'running'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'running'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'running'}, '49': {'State': 'running'}, '46': {'State': 'running'}, '47': {'State': 'running'}, '44': {'State': 'running'}, '45': {'State': 'running'}, '42': {'State': 'running'}, '43': {'State': 'running'}, '40': {'State': 'running'}, '41': {'State': 'running'}, '1': {'State': 'running'}, '5': {'State': 'running'}, '9': {'State': 'running'}, '77': {'State': 'running'}, '76': {'State': 'running'}, '75': {'State': 'running'}, '74': {'State': 'running'}, '73': {'State': 'running'}, '72': {'State': 'running'}, '71': {'State': 'running'}, '70': {'State': 'running'}, '79': {'State': 'running'}, '78': {'State': 'running'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['running', 24], ['running', 25], ['running', 26], ['running', 27], ['running', 20], ['running', 21], ['running', 22], ['running', 23], ['running', 28], ['running', 29], ['running', 4], ['running', 8], ['running', 59], ['running', 58], ['running', 55], ['running', 54], ['running', 57], ['running', 56], ['running', 51], ['running', 50], ['running', 53], ['running', 52], ['running', 82], ['running', 83], ['running', 80], ['running', 81], ['running', 86], ['running', 87], ['running', 84], ['running', 85], ['running', 3], ['running', 7], ['running', 39], ['running', 38], ['running', 33], ['running', 32], ['running', 31], ['running', 30], ['running', 37], ['running', 36], ['running', 35], ['running', 34], ['running', 60], ['running', 61], ['running', 62], ['running', 63], ['running', 64], ['running', 65], ['running', 66], ['running', 67], ['running', 68], ['running', 69], ['running', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['running', 16], ['running', 19], ['running', 18], ['running', 48], ['running', 49], ['running', 46], ['running', 47], ['running', 44], ['running', 45], ['running', 42], ['running', 43], ['running', 40], ['running', 41], ['running', 1], ['running', 5], ['running', 9], ['running', 77], ['running', 76], ['running', 75], ['running', 74], ['running', 73], ['running', 72], ['running', 71], ['running', 70], ['running', 79], ['running', 78]]}
+INFO 2016-10-09 14:50:18,876: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:50:18,876: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:50:18,876: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:50:18,876: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:50:18,876: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:50:18,877: 	 
+Jobs status:			running       100.0% (87/87)
+INFO 2016-10-09 14:50:18,877: 	 
+No publication information available yet
+INFO 2016-10-09 14:50:18,884: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:51:07,656: 	 Executing command: 'getoutput'
+DEBUG 2016-10-09 14:51:07,657: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:51:07,662: 	 Checking credentials
+DEBUG 2016-10-09 14:51:07,664: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:51:07,664: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:51:08,168: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34851
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:08,572: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34851
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:08,572: 	 Proxy valid for 09:40:51 hours
+DEBUG 2016-10-09 14:51:08,572: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2016-10-09 14:51:08,693: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:08,693: 	 Checking credentials
+DEBUG 2016-10-09 14:51:08,694: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:51:08,694: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:51:09,099: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34850
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:09,505: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34850
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:09,505: 	 Proxy valid for 09:40:50 hours
+DEBUG 2016-10-09 14:51:09,909: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u57680 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:10,260: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:51:10,367: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:10,367: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:51:10,367: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:51:10,571: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:29:25  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:51:10,572: 	 Myproxy is valid: 2496565
+DEBUG 2016-10-09 14:51:10,572: 	 Command use: getoutput
+DEBUG 2016-10-09 14:51:10,572: 	 Options use: ['--dump', 'FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3']
+DEBUG 2016-10-09 14:51:11,796: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:51:11,796: 	 Instance is prod
+DEBUG 2016-10-09 14:51:11,796: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:51:11,796: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:51:12,223: 	 Server result: {'result': ['161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'SUBMITTED', '2016-10-09 12:26:48.750650', 'None', '2016-10-09 12:27:49.516479', 'None', 'CMSSW_7_6_6', 'slc6_amd64_gcc493', '/FSQJets3/Run2015C_25ns-16Dec2015-v1/MINIAOD', '[]', '[]', 'LumiBased', "{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,120,153,214', '1,28', '4,35,40,414', '1,34,36,209,306,325,327,343'], 'runs': ['254989', '254993', '255019', '255029'], 'lumis_per_job': 10}", '0', '05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz', 'https://cmsweb.cern.ch/crabcache', 'mmisiura', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura', 'cms', 'None', 'None', 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3-00000000000000000000000000000000', 'T2_PL_Swierk', 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', 'Analysis', '{}', '[]', 'F', 'vocms052', '[]', '1250', '1', '2000', '10', 'None', 'http://submit-6.t2.ucsd.edu/CSstoragePath/47/uscms3269/161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'None', '[]', '[]', '[]', 'pythia', '[]', "['trees.root']", "['mnTrgAna_PAT.root']", 'https://cmsweb.cern.ch/couchdb2', 'None', '0', 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'crab3@submit-6.t2.ucsd.edu', 'F', '[]', 'T', '/store/user/mmisiura/', 'F', 'None', 'F', 'F', 'F', 'None', 'FSQJets3', 'asodb1', 'SUBMIT', '1159302', 'fbb9f46d5ad234a842ab8550686633f79dcd257675466ca66e20daccf24329b5.tar.gz'], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_totalunits', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_job_type', 'tm_arguments', 'panda_resubmitted_jobs', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_user_webdir', 'tm_activity', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_task_warnings', 'tm_generator', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_asourl', 'tm_events_per_lumi', 'tm_use_parent', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_publish_groupname', 'tm_nonvalid_input_dataset', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_asodb', 'tm_task_command', 'clusterid', 'tm_debug_files']}}
+DEBUG 2016-10-09 14:51:12,223: 	 Retrieving locations for task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:51:12,223: 	 Retrieving all file locations
+DEBUG 2016-10-09 14:51:30,672: 	 Server result: {'result': [], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_task_command', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_args', 'panda_resubmitted_jobs', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_asourl', 'tm_asodb', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'clusterid', 'tm_start_time']}}
+INFO 2016-10-09 14:51:30,673: 	 No files to retrieve.
+DEBUG 2016-10-09 14:51:30,676: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:56:44,711: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:56:44,711: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:56:44,718: 	 Checking credentials
+DEBUG 2016-10-09 14:56:44,719: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:56:44,719: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:56:45,224: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34514
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:45,631: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34514
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:45,631: 	 Proxy valid for 09:35:14 hours
+DEBUG 2016-10-09 14:56:45,743: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:45,743: 	 Checking credentials
+DEBUG 2016-10-09 14:56:45,743: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:56:45,743: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:56:46,148: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34513
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:46,552: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34513
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:46,552: 	 Proxy valid for 09:35:13 hours
+DEBUG 2016-10-09 14:56:46,937: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:56:47,044: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:47,044: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:56:47,045: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:56:49,051: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:23:47  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:56:49,052: 	 Myproxy is valid: 2496227
+DEBUG 2016-10-09 14:56:49,052: 	 Command use: status
+DEBUG 2016-10-09 14:56:49,052: 	 Options use: []
+DEBUG 2016-10-09 14:57:09,065: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:57:09,065: 	 Instance is prod
+DEBUG 2016-10-09 14:57:09,065: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:57:09,065: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:57:09,066: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:57:15,299: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 15, 'transferring': 72}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'running'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'running'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'running'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'transferring'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'running'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['running', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['running', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['running', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['transferring', 16], ['running', 19], ['running', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['running', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 14:57:15,299: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:57:15,299: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:57:15,299: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:57:15,299: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:57:15,299: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:57:15,299: 	 
+Jobs status:			running        17.2% (15/87)
+INFO 2016-10-09 14:57:15,299: 	 				transferring   82.8% (72/87)
+INFO 2016-10-09 14:57:15,299: 	 
+No publication information available yet
+INFO 2016-10-09 14:57:15,303: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 14:58:53,858: 	 Executing command: 'status'
+DEBUG 2016-10-09 14:58:53,858: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 14:58:53,866: 	 Checking credentials
+DEBUG 2016-10-09 14:58:53,866: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:58:53,866: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:58:54,270: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34385
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:58:54,674: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34385
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:58:54,674: 	 Proxy valid for 09:33:05 hours
+DEBUG 2016-10-09 14:58:54,782: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:58:54,783: 	 Checking credentials
+DEBUG 2016-10-09 14:58:54,783: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 14:58:54,783: 	 Getting proxy life time left
+DEBUG 2016-10-09 14:58:55,186: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34384
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:58:55,590: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34384
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:58:55,590: 	 Proxy valid for 09:33:04 hours
+DEBUG 2016-10-09 14:59:32,609: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 14:59:32,722: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:59:32,722: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 14:59:32,722: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 14:59:33,126: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:21:02  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 14:59:33,127: 	 Myproxy is valid: 2496062
+DEBUG 2016-10-09 14:59:33,127: 	 Command use: status
+DEBUG 2016-10-09 14:59:33,127: 	 Options use: []
+DEBUG 2016-10-09 14:59:33,524: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 14:59:33,524: 	 Instance is prod
+DEBUG 2016-10-09 14:59:33,524: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 14:59:33,524: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 14:59:33,524: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 14:59:47,807: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 15, 'transferring': 72}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'running'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'running'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'running'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'transferring'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'running'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['running', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['running', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['running', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['transferring', 16], ['running', 19], ['running', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['running', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 14:59:47,807: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:59:47,807: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:59:47,807: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 14:59:47,807: 	 Task status:			SUBMITTED
+INFO 2016-10-09 14:59:47,807: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 14:59:47,807: 	 
+Jobs status:			running        17.2% (15/87)
+INFO 2016-10-09 14:59:47,807: 	 				transferring   82.8% (72/87)
+INFO 2016-10-09 14:59:47,808: 	 
+No publication information available yet
+INFO 2016-10-09 14:59:47,811: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:00:00,579: 	 Executing command: 'getoutput'
+DEBUG 2016-10-09 15:00:00,580: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:00:00,585: 	 Checking credentials
+DEBUG 2016-10-09 15:00:00,585: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:00:00,585: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:00:00,989: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34319
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:01,392: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34318
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:01,392: 	 Proxy valid for 09:31:59 hours
+DEBUG 2016-10-09 15:00:01,393: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2016-10-09 15:00:01,505: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:01,506: 	 Checking credentials
+DEBUG 2016-10-09 15:00:01,506: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:00:01,506: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:00:01,912: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34318
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:02,318: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34317
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:02,318: 	 Proxy valid for 09:31:58 hours
+DEBUG 2016-10-09 15:00:02,824: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u57680 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:03,199: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:00:03,305: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:03,305: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:00:03,305: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:00:03,808: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:20:32  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:00:03,809: 	 Myproxy is valid: 2496032
+DEBUG 2016-10-09 15:00:03,809: 	 Command use: getoutput
+DEBUG 2016-10-09 15:00:03,809: 	 Options use: ['--dump', 'FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3']
+DEBUG 2016-10-09 15:00:04,225: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:00:04,225: 	 Instance is prod
+DEBUG 2016-10-09 15:00:04,225: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:00:04,225: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:00:04,609: 	 Server result: {'result': ['161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'SUBMITTED', '2016-10-09 12:26:48.750650', 'None', '2016-10-09 12:27:49.516479', 'None', 'CMSSW_7_6_6', 'slc6_amd64_gcc493', '/FSQJets3/Run2015C_25ns-16Dec2015-v1/MINIAOD', '[]', '[]', 'LumiBased', "{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,120,153,214', '1,28', '4,35,40,414', '1,34,36,209,306,325,327,343'], 'runs': ['254989', '254993', '255019', '255029'], 'lumis_per_job': 10}", '0', '05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz', 'https://cmsweb.cern.ch/crabcache', 'mmisiura', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura', 'cms', 'None', 'None', 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3-00000000000000000000000000000000', 'T2_PL_Swierk', 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', 'Analysis', '{}', '[]', 'F', 'vocms052', '[]', '1250', '1', '2000', '10', 'None', 'http://submit-6.t2.ucsd.edu/CSstoragePath/47/uscms3269/161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'None', '[]', '[]', '[]', 'pythia', '[]', "['trees.root']", "['mnTrgAna_PAT.root']", 'https://cmsweb.cern.ch/couchdb2', 'None', '0', 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'crab3@submit-6.t2.ucsd.edu', 'F', '[]', 'T', '/store/user/mmisiura/', 'F', 'None', 'F', 'F', 'F', 'None', 'FSQJets3', 'asodb1', 'SUBMIT', '1159302', 'fbb9f46d5ad234a842ab8550686633f79dcd257675466ca66e20daccf24329b5.tar.gz'], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_totalunits', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_job_type', 'tm_arguments', 'panda_resubmitted_jobs', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_user_webdir', 'tm_activity', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_task_warnings', 'tm_generator', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_asourl', 'tm_events_per_lumi', 'tm_use_parent', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_publish_groupname', 'tm_nonvalid_input_dataset', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_asodb', 'tm_task_command', 'clusterid', 'tm_debug_files']}}
+DEBUG 2016-10-09 15:00:04,609: 	 Retrieving locations for task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:00:04,610: 	 Retrieving all file locations
+DEBUG 2016-10-09 15:00:15,731: 	 Server result: {'result': [], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_task_command', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_args', 'panda_resubmitted_jobs', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_asourl', 'tm_asodb', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'clusterid', 'tm_start_time']}}
+INFO 2016-10-09 15:00:15,731: 	 No files to retrieve.
+DEBUG 2016-10-09 15:00:15,738: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:02:42,819: 	 Executing command: 'status'
+DEBUG 2016-10-09 15:02:42,820: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:02:42,850: 	 Checking credentials
+DEBUG 2016-10-09 15:02:42,850: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:02:42,850: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:02:43,457: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34156
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:44,061: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34156
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:44,061: 	 Proxy valid for 09:29:16 hours
+DEBUG 2016-10-09 15:02:44,198: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:44,198: 	 Checking credentials
+DEBUG 2016-10-09 15:02:44,198: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:02:44,198: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:02:44,802: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 34155
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:45,406: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 34154
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:45,406: 	 Proxy valid for 09:29:15 hours
+DEBUG 2016-10-09 15:02:45,766: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:02:45,890: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:45,891: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:02:45,891: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:02:46,895: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:17:49  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:02:46,897: 	 Myproxy is valid: 2495869
+DEBUG 2016-10-09 15:02:46,897: 	 Command use: status
+DEBUG 2016-10-09 15:02:46,897: 	 Options use: []
+DEBUG 2016-10-09 15:02:49,784: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:02:49,784: 	 Instance is prod
+DEBUG 2016-10-09 15:02:49,784: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:02:49,784: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:02:49,784: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:02:56,662: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 15, 'transferring': 72}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'running'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'running'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'running'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'transferring'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'running'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['running', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['running', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['running', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['transferring', 16], ['running', 19], ['running', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['running', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 15:02:56,662: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:02:56,663: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:02:56,663: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 15:02:56,663: 	 Task status:			SUBMITTED
+INFO 2016-10-09 15:02:56,663: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:02:56,663: 	 
+Jobs status:			running        17.2% (15/87)
+INFO 2016-10-09 15:02:56,663: 	 				transferring   82.8% (72/87)
+INFO 2016-10-09 15:02:56,663: 	 
+No publication information available yet
+INFO 2016-10-09 15:02:56,668: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:05:36,740: 	 Executing command: 'status'
+DEBUG 2016-10-09 15:05:36,740: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:05:36,771: 	 Checking credentials
+DEBUG 2016-10-09 15:05:36,771: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:05:36,771: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:05:38,177: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33981
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:38,581: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33981
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:38,581: 	 Proxy valid for 09:26:21 hours
+DEBUG 2016-10-09 15:05:38,694: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:38,695: 	 Checking credentials
+DEBUG 2016-10-09 15:05:38,695: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:05:38,695: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:05:39,199: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33980
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:39,704: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33980
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:39,705: 	 Proxy valid for 09:26:20 hours
+DEBUG 2016-10-09 15:05:43,655: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:05:43,764: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:43,764: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:05:43,764: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:05:43,967: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:14:52  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:05:43,968: 	 Myproxy is valid: 2495692
+DEBUG 2016-10-09 15:05:43,968: 	 Command use: status
+DEBUG 2016-10-09 15:05:43,968: 	 Options use: []
+DEBUG 2016-10-09 15:05:44,327: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:05:44,327: 	 Instance is prod
+DEBUG 2016-10-09 15:05:44,327: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:05:44,327: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:05:44,327: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:05:49,706: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 15, 'transferring': 72}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'running'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'running'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'running'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'transferring'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'running'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['running', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['running', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['running', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['transferring', 16], ['running', 19], ['running', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['running', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 15:05:49,706: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:05:49,706: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:05:49,706: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 15:05:49,706: 	 Task status:			SUBMITTED
+INFO 2016-10-09 15:05:49,707: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:05:49,707: 	 
+Jobs status:			running        17.2% (15/87)
+INFO 2016-10-09 15:05:49,707: 	 				transferring   82.8% (72/87)
+INFO 2016-10-09 15:05:49,707: 	 
+No publication information available yet
+INFO 2016-10-09 15:05:49,711: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:08:29,294: 	 Executing command: 'status'
+DEBUG 2016-10-09 15:08:29,296: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:08:29,304: 	 Checking credentials
+DEBUG 2016-10-09 15:08:29,304: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:08:29,304: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:08:29,709: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33810
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:30,113: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33809
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:30,113: 	 Proxy valid for 09:23:30 hours
+DEBUG 2016-10-09 15:08:30,225: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:30,225: 	 Checking credentials
+DEBUG 2016-10-09 15:08:30,227: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:08:30,227: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:08:30,631: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33809
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:31,136: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33808
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:31,136: 	 Proxy valid for 09:23:29 hours
+DEBUG 2016-10-09 15:08:31,515: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:08:31,621: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:31,621: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:08:31,621: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:08:32,125: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:12:03  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:08:32,125: 	 Myproxy is valid: 2495523
+DEBUG 2016-10-09 15:08:32,126: 	 Command use: status
+DEBUG 2016-10-09 15:08:32,126: 	 Options use: []
+DEBUG 2016-10-09 15:08:32,484: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:08:32,484: 	 Instance is prod
+DEBUG 2016-10-09 15:08:32,484: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:08:32,484: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:08:32,484: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:08:37,872: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 15, 'transferring': 72}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'running'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'running'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'running'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'transferring'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'running'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['running', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['running', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['running', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['transferring', 16], ['running', 19], ['running', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['running', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 15:08:37,872: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:08:37,872: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:08:37,872: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 15:08:37,872: 	 Task status:			SUBMITTED
+INFO 2016-10-09 15:08:37,872: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:08:37,872: 	 
+Jobs status:			running        17.2% (15/87)
+INFO 2016-10-09 15:08:37,872: 	 				transferring   82.8% (72/87)
+INFO 2016-10-09 15:08:37,872: 	 
+No publication information available yet
+INFO 2016-10-09 15:08:37,876: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:09:05,637: 	 Executing command: 'status'
+DEBUG 2016-10-09 15:09:05,637: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:09:05,642: 	 Checking credentials
+DEBUG 2016-10-09 15:09:05,642: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:09:05,642: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:09:06,046: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33773
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:06,449: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33773
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:06,449: 	 Proxy valid for 09:22:53 hours
+DEBUG 2016-10-09 15:09:06,561: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:06,562: 	 Checking credentials
+DEBUG 2016-10-09 15:09:06,562: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:09:06,562: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:09:06,967: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33773
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:07,370: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33772
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:07,370: 	 Proxy valid for 09:22:53 hours
+DEBUG 2016-10-09 15:09:07,715: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:09:07,821: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:07,821: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:09:07,821: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:09:08,025: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:11:28  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:09:08,025: 	 Myproxy is valid: 2495488
+DEBUG 2016-10-09 15:09:08,025: 	 Command use: status
+DEBUG 2016-10-09 15:09:08,026: 	 Options use: []
+DEBUG 2016-10-09 15:09:09,989: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:09:09,989: 	 Instance is prod
+DEBUG 2016-10-09 15:09:09,989: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:09:09,989: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:09:09,989: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:09:16,405: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 15, 'transferring': 72}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'running'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'running'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'running'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'running'}, '11': {'State': 'running'}, '10': {'State': 'running'}, '13': {'State': 'running'}, '12': {'State': 'running'}, '15': {'State': 'running'}, '14': {'State': 'running'}, '17': {'State': 'running'}, '16': {'State': 'transferring'}, '19': {'State': 'running'}, '18': {'State': 'running'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'running'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['running', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['running', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['running', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['running', 6], ['running', 11], ['running', 10], ['running', 13], ['running', 12], ['running', 15], ['running', 14], ['running', 17], ['transferring', 16], ['running', 19], ['running', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['running', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 15:09:16,405: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:09:16,405: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:09:16,405: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 15:09:16,405: 	 Task status:			SUBMITTED
+INFO 2016-10-09 15:09:16,405: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:09:16,406: 	 
+Jobs status:			running        17.2% (15/87)
+INFO 2016-10-09 15:09:16,406: 	 				transferring   82.8% (72/87)
+INFO 2016-10-09 15:09:16,406: 	 
+No publication information available yet
+INFO 2016-10-09 15:09:16,408: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:13:35,765: 	 Executing command: 'status'
+DEBUG 2016-10-09 15:13:35,765: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:13:35,776: 	 Checking credentials
+DEBUG 2016-10-09 15:13:35,776: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:13:35,776: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:13:36,280: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33503
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:13:36,684: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33503
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:13:36,684: 	 Proxy valid for 09:18:23 hours
+DEBUG 2016-10-09 15:13:36,796: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:13:36,796: 	 Checking credentials
+DEBUG 2016-10-09 15:13:36,796: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:13:36,796: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:13:37,308: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33502
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:13:37,712: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33502
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:13:37,712: 	 Proxy valid for 09:18:22 hours
+DEBUG 2016-10-09 15:14:12,255: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:14:12,366: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:14:12,367: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:14:12,367: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:14:12,870: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 693:06:23  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:14:12,871: 	 Myproxy is valid: 2495183
+DEBUG 2016-10-09 15:14:12,871: 	 Command use: status
+DEBUG 2016-10-09 15:14:12,871: 	 Options use: []
+DEBUG 2016-10-09 15:14:13,254: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:14:13,254: 	 Instance is prod
+DEBUG 2016-10-09 15:14:13,254: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:14:13,254: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:14:13,254: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:14:18,501: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'running': 3, 'transferring': 84}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'transferring'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'transferring'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'running'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'transferring'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'transferring'}, '11': {'State': 'running'}, '10': {'State': 'transferring'}, '13': {'State': 'running'}, '12': {'State': 'transferring'}, '15': {'State': 'transferring'}, '14': {'State': 'transferring'}, '17': {'State': 'transferring'}, '16': {'State': 'transferring'}, '19': {'State': 'transferring'}, '18': {'State': 'transferring'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'transferring'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['transferring', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['transferring', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['running', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['transferring', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['transferring', 6], ['running', 11], ['transferring', 10], ['running', 13], ['transferring', 12], ['transferring', 15], ['transferring', 14], ['transferring', 17], ['transferring', 16], ['transferring', 19], ['transferring', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['transferring', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 15:14:18,501: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:14:18,502: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:14:18,502: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 15:14:18,502: 	 Task status:			SUBMITTED
+INFO 2016-10-09 15:14:18,502: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:14:18,502: 	 
+Jobs status:			running         3.4% ( 3/87)
+INFO 2016-10-09 15:14:18,502: 	 				transferring   96.6% (84/87)
+INFO 2016-10-09 15:14:18,502: 	 
+No publication information available yet
+INFO 2016-10-09 15:14:18,506: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:20:10,347: 	 Executing command: 'status'
+DEBUG 2016-10-09 15:20:10,347: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:20:10,353: 	 Checking credentials
+DEBUG 2016-10-09 15:20:10,353: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:20:10,353: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:20:10,757: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33109
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:11,161: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33108
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:11,161: 	 Proxy valid for 09:11:49 hours
+DEBUG 2016-10-09 15:20:11,270: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:11,271: 	 Checking credentials
+DEBUG 2016-10-09 15:20:11,271: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:20:11,271: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:20:11,674: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33108
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:12,080: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33107
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:12,080: 	 Proxy valid for 09:11:48 hours
+DEBUG 2016-10-09 15:20:54,281: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:20:54,387: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:54,387: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:20:54,387: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:20:54,490: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 692:59:41  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:20:54,491: 	 Myproxy is valid: 2494781
+DEBUG 2016-10-09 15:20:54,491: 	 Command use: status
+DEBUG 2016-10-09 15:20:54,491: 	 Options use: []
+DEBUG 2016-10-09 15:20:54,868: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:20:54,868: 	 Instance is prod
+DEBUG 2016-10-09 15:20:54,868: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:20:54,868: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:20:54,868: 	 Looking up detailed status of task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:21:05,577: 	 {'status': 'SUBMITTED', 'username': 'mmisiura', 'jobsPerStatus': {'finished': 1, 'transferring': 84, 'idle': 2}, 'jobs': {'24': {'State': 'transferring'}, '25': {'State': 'transferring'}, '26': {'State': 'transferring'}, '27': {'State': 'transferring'}, '20': {'State': 'transferring'}, '21': {'State': 'transferring'}, '22': {'State': 'transferring'}, '23': {'State': 'transferring'}, '28': {'State': 'transferring'}, '29': {'State': 'transferring'}, '4': {'State': 'transferring'}, '8': {'State': 'transferring'}, '59': {'State': 'transferring'}, '58': {'State': 'transferring'}, '55': {'State': 'transferring'}, '54': {'State': 'transferring'}, '57': {'State': 'transferring'}, '56': {'State': 'transferring'}, '51': {'State': 'transferring'}, '50': {'State': 'transferring'}, '53': {'State': 'finished'}, '52': {'State': 'transferring'}, '82': {'State': 'transferring'}, '83': {'State': 'transferring'}, '80': {'State': 'transferring'}, '81': {'State': 'transferring'}, '86': {'State': 'transferring'}, '87': {'State': 'transferring'}, '84': {'State': 'transferring'}, '85': {'State': 'transferring'}, '3': {'State': 'transferring'}, '7': {'State': 'transferring'}, '39': {'State': 'transferring'}, '38': {'State': 'transferring'}, '33': {'State': 'transferring'}, '32': {'State': 'transferring'}, '31': {'State': 'transferring'}, '30': {'State': 'transferring'}, '37': {'State': 'transferring'}, '36': {'State': 'transferring'}, '35': {'State': 'transferring'}, '34': {'State': 'transferring'}, '60': {'State': 'transferring'}, '61': {'State': 'transferring'}, '62': {'State': 'transferring'}, '63': {'State': 'transferring'}, '64': {'State': 'transferring'}, '65': {'State': 'transferring'}, '66': {'State': 'transferring'}, '67': {'State': 'transferring'}, '68': {'State': 'transferring'}, '69': {'State': 'transferring'}, '2': {'State': 'transferring'}, '6': {'State': 'transferring'}, '11': {'State': 'idle'}, '10': {'State': 'transferring'}, '13': {'State': 'idle'}, '12': {'State': 'transferring'}, '15': {'State': 'transferring'}, '14': {'State': 'transferring'}, '17': {'State': 'transferring'}, '16': {'State': 'transferring'}, '19': {'State': 'transferring'}, '18': {'State': 'transferring'}, '48': {'State': 'transferring'}, '49': {'State': 'transferring'}, '46': {'State': 'transferring'}, '47': {'State': 'transferring'}, '44': {'State': 'transferring'}, '45': {'State': 'transferring'}, '42': {'State': 'transferring'}, '43': {'State': 'transferring'}, '40': {'State': 'transferring'}, '41': {'State': 'transferring'}, '1': {'State': 'transferring'}, '5': {'State': 'transferring'}, '9': {'State': 'transferring'}, '77': {'State': 'transferring'}, '76': {'State': 'transferring'}, '75': {'State': 'transferring'}, '74': {'State': 'transferring'}, '73': {'State': 'transferring'}, '72': {'State': 'transferring'}, '71': {'State': 'transferring'}, '70': {'State': 'transferring'}, '79': {'State': 'transferring'}, '78': {'State': 'transferring'}}, 'publication': {'publishing': 0, 'publication_failed': 0, 'not_published': 85, 'published': 0}, 'taskWarningMsg': [], 'schedd': 'crab3@submit-6.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': ['/FSQJets3/mmisiura-FSQ_Run2015C_lowPU_09102016_data_FSQJets3-231de740cf826b1b54ab620f15c6ec27/USER'], 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1476016008, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['transferring', 24], ['transferring', 25], ['transferring', 26], ['transferring', 27], ['transferring', 20], ['transferring', 21], ['transferring', 22], ['transferring', 23], ['transferring', 28], ['transferring', 29], ['transferring', 4], ['transferring', 8], ['transferring', 59], ['transferring', 58], ['transferring', 55], ['transferring', 54], ['transferring', 57], ['transferring', 56], ['transferring', 51], ['transferring', 50], ['finished', 53], ['transferring', 52], ['transferring', 82], ['transferring', 83], ['transferring', 80], ['transferring', 81], ['transferring', 86], ['transferring', 87], ['transferring', 84], ['transferring', 85], ['transferring', 3], ['transferring', 7], ['transferring', 39], ['transferring', 38], ['transferring', 33], ['transferring', 32], ['transferring', 31], ['transferring', 30], ['transferring', 37], ['transferring', 36], ['transferring', 35], ['transferring', 34], ['transferring', 60], ['transferring', 61], ['transferring', 62], ['transferring', 63], ['transferring', 64], ['transferring', 65], ['transferring', 66], ['transferring', 67], ['transferring', 68], ['transferring', 69], ['transferring', 2], ['transferring', 6], ['idle', 11], ['transferring', 10], ['idle', 13], ['transferring', 12], ['transferring', 15], ['transferring', 14], ['transferring', 17], ['transferring', 16], ['transferring', 19], ['transferring', 18], ['transferring', 48], ['transferring', 49], ['transferring', 46], ['transferring', 47], ['transferring', 44], ['transferring', 45], ['transferring', 42], ['transferring', 43], ['transferring', 40], ['transferring', 41], ['transferring', 1], ['transferring', 5], ['transferring', 9], ['transferring', 77], ['transferring', 76], ['transferring', 75], ['transferring', 74], ['transferring', 73], ['transferring', 72], ['transferring', 71], ['transferring', 70], ['transferring', 79], ['transferring', 78]]}
+INFO 2016-10-09 15:21:05,577: 	 CRAB project directory:		/afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:21:05,578: 	 Task name:			161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:21:05,578: 	 Grid scheduler:			crab3@submit-6.t2.ucsd.edu
+INFO 2016-10-09 15:21:05,578: 	 Task status:			SUBMITTED
+INFO 2016-10-09 15:21:05,578: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=mmisiura&table=Mains&pattern=161009_122648%3Ammisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+INFO 2016-10-09 15:21:05,578: 	 
+Jobs status:			finished        1.1% ( 1/87)
+INFO 2016-10-09 15:21:05,578: 	 				idle            2.3% ( 2/87)
+INFO 2016-10-09 15:21:05,578: 	 				transferring   96.6% (84/87)
+INFO 2016-10-09 15:21:05,578: 	 
+Publication status:		idle           97.7% (85/87)
+				unsubmitted     2.3% ( 2/87)
+INFO 2016-10-09 15:21:05,578: 	 
+Output dataset:			/FSQJets3/mmisiura-FSQ_Run2015C_lowPU_09102016_data_FSQJets3-231de740cf826b1b54ab620f15c6ec27/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FFSQJets3%2Fmmisiura-FSQ_Run2015C_lowPU_09102016_data_FSQJets3-231de740cf826b1b54ab620f15c6ec27%2FUSER&instance=prod%2Fphys03
+INFO 2016-10-09 15:21:05,582: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log
+DEBUG 2016-10-09 15:21:35,762: 	 Executing command: 'getoutput'
+DEBUG 2016-10-09 15:21:35,763: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:21:35,768: 	 Checking credentials
+DEBUG 2016-10-09 15:21:35,768: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:21:35,768: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:21:36,171: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33023
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:21:36,575: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33023
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:21:36,575: 	 Proxy valid for 09:10:23 hours
+DEBUG 2016-10-09 15:21:36,576: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2016-10-09 15:21:36,684: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:21:36,684: 	 Checking credentials
+DEBUG 2016-10-09 15:21:36,684: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:21:36,684: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:21:37,087: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 33022
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:21:37,491: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 33022
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:21:37,492: 	 Proxy valid for 09:10:22 hours
+DEBUG 2016-10-09 15:21:37,895: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u57680 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+INFO 2016-10-09 15:21:38,226: 	 The server answered with an error.
+INFO 2016-10-09 15:21:38,226: 	 It seems the CMSWEB frontend is not responding. Please check: https://twiki.cern.ch/twiki/bin/viewauth/CMS/ScheduledInterventions
+DEBUG 2016-10-09 15:21:38,226: 	 ERROR: Service Unavailable (503):  '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+ <title>CMSWEB Error: Service unavailable</title>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+ <link rel="stylesheet" type="text/css" media="screen" href="/css/cmsweb.css" />
+</head>
+<body>
+ <div id="main">
+  <div id="top">
+   <div class="boxTitle"><img src="/img/title.gif" alt="CMSWEB (title)" /></div>
+  </div>
+  <div id="middle">
+   <div class="boxLinkContainer">
+    <h2>Service unavailable</h2>
+    <p>The site you requested is not available.</p><p>CMS <a href='https://twiki.cern.ch/twiki/bin/view/CMS/ScheduledInterventions'>scheduled interventions page</a> lists planned CMS and CERN service downtimes and known site-wide computing system incidents. Planned updates are notified on the <a href='https://hypernews.cern.ch/HyperNews/CMS/get/cernCompAnnounce.html'>CERN computing announcements</a> forum.</p><p>Would you please be so kind and <a href='https://ggus.eu/?mode=ticket_cms'>create a ticket</a> to"CMS Web Tools" support unit</a> if this interruption was unexpected?</p>
+   </div>
+  </div>
+  <div id="bottom">
+   <div class="boxFooter">&nbsp;</div>
+  </div>
+ </div>
+</body>
+</html>
+'
+DEBUG 2016-10-09 15:21:38,226: 	 Command failed with URI: https://cmsweb.cern.ch/crabserver/prod/info
+DEBUG 2016-10-09 15:21:38,226: 	      Input data: {'subresource': 'delegatedn'}
+DEBUG 2016-10-09 15:21:38,226: 	      Request headers: {'Date': 'Sun, 09 Oct 2016 13:21:38 GMT', 'Connection': 'close', 'Content-Type': 'text/html', 'CMS-Server-Time': 'D=3562 t=1476019298221182', 'Server': 'Apache'}
+ERROR 2016-10-09 15:21:38,226: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 339, in __init__
+    self.handleProxy(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 414, in handleProxy
+    all_task_workers_dns = server_info('delegatedn', self.serverurl, self.proxyfilename, baseurl)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 664, in server_info
+    dictresult, dummyStatus, dummyReason = server.get(baseurl, requestdict)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 79, in get
+    return self.makeRequest(uri = uri, data = data, verb = 'GET')
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 128, in makeRequest
+    capath=caCertPath)#, verbose=True)# for debug
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/WMCore/Services/pycurl_manager.py", line 209, in request
+    raise exc
+HTTPException: url=https://cmsweb.cern.ch/crabserver/prod/info, code=503, reason=Service Unavailable, headers={'Date': 'Sun, 09 Oct 2016 13:21:38 GMT', 'Connection': 'close', 'Content-Type': 'text/html', 'CMS-Server-Time': 'D=3562 t=1476019298221182', 'Server': 'Apache'}
+DEBUG 2016-10-09 15:22:11,556: 	 Executing command: 'getoutput'
+DEBUG 2016-10-09 15:22:11,557: 	 Found CRAB cache file /afs/cern.ch/user/m/misiura/.crab3
+DEBUG 2016-10-09 15:22:11,561: 	 Checking credentials
+DEBUG 2016-10-09 15:22:11,561: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:22:11,562: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:22:11,964: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 32988
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:12,470: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 32987
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:12,470: 	 Proxy valid for 09:09:48 hours
+DEBUG 2016-10-09 15:22:12,471: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2016-10-09 15:22:12,580: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:12,580: 	 Checking credentials
+DEBUG 2016-10-09 15:22:12,580: 	 Found proxy file /tmp/x509up_u57680
+DEBUG 2016-10-09 15:22:12,580: 	 Getting proxy life time left
+DEBUG 2016-10-09 15:22:12,984: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -timeleft
+ output : 32987
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:13,389: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u57680 -actimeleft
+ output : 32986
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:13,389: 	 Proxy valid for 09:09:47 hours
+DEBUG 2016-10-09 15:22:13,792: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u57680 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:14,157: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-10-09 15:22:14,263: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:14,263: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-10-09 15:22:14,264: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura_cmsweb.cern.ch for credential name
+DEBUG 2016-10-09 15:22:14,768: 	 Executing : 
+ command : myproxy-info -l bc02c1d6fe7c0848235206e688f781d6fe6f34d4 -s myproxy.cern.ch
+ output : username: bc02c1d6fe7c0848235206e688f781d6fe6f34d4
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 692:58:21  (28.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-10-09 15:22:14,769: 	 Myproxy is valid: 2494701
+DEBUG 2016-10-09 15:22:14,769: 	 Command use: getoutput
+DEBUG 2016-10-09 15:22:14,769: 	 Options use: ['--dump', 'FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3']
+DEBUG 2016-10-09 15:22:15,130: 	 CRABClient version: 3.3.1608
+DEBUG 2016-10-09 15:22:15,130: 	 Instance is prod
+DEBUG 2016-10-09 15:22:15,130: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-10-09 15:22:15,130: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-10-09 15:22:15,511: 	 Server result: {'result': ['161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'SUBMITTED', '2016-10-09 12:26:48.750650', 'None', '2016-10-09 12:27:49.516479', 'None', 'CMSSW_7_6_6', 'slc6_amd64_gcc493', '/FSQJets3/Run2015C_25ns-16Dec2015-v1/MINIAOD', '[]', '[]', 'LumiBased', "{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,120,153,214', '1,28', '4,35,40,414', '1,34,36,209,306,325,327,343'], 'runs': ['254989', '254993', '255019', '255029'], 'lumis_per_job': 10}", '0', '05a6eb0561f8ea680af54dcc1cf2f63a2c3f30569bf831789cae85c9874d8839.tar.gz', 'https://cmsweb.cern.ch/crabcache', 'mmisiura', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=misiura/CN=681443/CN=Maciej Misiura', 'cms', 'None', 'None', 'FSQ_Run2015C_lowPU_09102016_data_FSQJets3-00000000000000000000000000000000', 'T2_PL_Swierk', 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'T', 'Analysis', '{}', '[]', 'F', 'vocms052', '[]', '1250', '1', '2000', '10', "['/FSQJets3/mmisiura-FSQ_Run2015C_lowPU_09102016_data_FSQJets3-231de740cf826b1b54ab620f15c6ec27/USER']", 'http://submit-6.t2.ucsd.edu/CSstoragePath/47/uscms3269/161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3', 'None', 'None', '[]', '[]', '[]', 'pythia', '[]', "['trees.root']", "['mnTrgAna_PAT.root']", 'https://cmsweb.cern.ch/couchdb2', 'None', '0', 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'crab3@submit-6.t2.ucsd.edu', 'F', '[]', 'T', '/store/user/mmisiura/', 'F', 'None', 'F', 'F', 'F', 'None', 'FSQJets3', 'asodb1', 'SUBMIT', '1159302', 'fbb9f46d5ad234a842ab8550686633f79dcd257675466ca66e20daccf24329b5.tar.gz'], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_totalunits', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_job_type', 'tm_arguments', 'panda_resubmitted_jobs', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_user_webdir', 'tm_activity', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_task_warnings', 'tm_generator', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_asourl', 'tm_events_per_lumi', 'tm_use_parent', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_publish_groupname', 'tm_nonvalid_input_dataset', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_asodb', 'tm_task_command', 'clusterid', 'tm_debug_files']}}
+DEBUG 2016-10-09 15:22:15,511: 	 Retrieving locations for task 161009_122648:mmisiura_crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3
+DEBUG 2016-10-09 15:22:15,511: 	 Retrieving all file locations
+DEBUG 2016-10-09 15:22:24,671: 	 Server result: {'result': [{'checksum': {'adler32': 'ac2fb646', 'cksum': 206152601, 'md5': 'ac2fb646'}, 'pfn': 'srm://se.cis.gov.pl:8446/srm/managerv2?SFN=/dpm/cis.gov.pl/home/cms/store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/mnTrgAna_PAT_53.root', 'lfn': '/store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/mnTrgAna_PAT_53.root', 'jobid': 53, 'size': 2374191}, {'checksum': {'adler32': 'f73642be', 'cksum': 694152791, 'md5': 'f73642be'}, 'pfn': 'srm://se.cis.gov.pl:8446/srm/managerv2?SFN=/dpm/cis.gov.pl/home/cms/store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/trees_53.root', 'lfn': '/store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/trees_53.root', 'jobid': 53, 'size': 8327139}], 'desc': {'columns': ['tm_taskname', 'panda_jobset_id', 'tm_task_status', 'tm_task_command', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_args', 'panda_resubmitted_jobs', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_asourl', 'tm_asodb', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'clusterid', 'tm_start_time']}}
+DEBUG 2016-10-09 15:22:24,671: 	 Getting url info
+INFO 2016-10-09 15:22:24,671: 	 === Files from job 53:
+1) PFN: srm://se.cis.gov.pl:8446/srm/managerv2?SFN=/dpm/cis.gov.pl/home/cms/store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/mnTrgAna_PAT_53.root
+   LFN: /store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/mnTrgAna_PAT_53.root
+2) PFN: srm://se.cis.gov.pl:8446/srm/managerv2?SFN=/dpm/cis.gov.pl/home/cms/store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/trees_53.root
+   LFN: /store/user/mmisiura/FSQJets3/FSQ_Run2015C_lowPU_09102016_data_FSQJets3/161009_122648/0000/trees_53.root
+DEBUG 2016-10-09 15:22:24,672: 	 Log file is /afs/cern.ch/user/m/misiura/CMSSW_7_6_6/src/CommonFSQFramework/Skim/config/Jets/FSQ_Run2015C_lowPU_09102016/crab_FSQ_Run2015C_lowPU_09102016_data_FSQJets3/crab.log

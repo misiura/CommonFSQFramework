@@ -7,6 +7,7 @@
 #include "DataFormats/Luminosity/interface/LumiDetails.h"
 #include "DataFormats/Scalers/interface/LumiScalers.h"
 #include "SimDataFormats/Vertex/interface/SimVertexContainer.h"
+#include "DataFormats/Scalers/interface/LumiScalers.h"
 #include "TLorentzVector.h"
 
 EventIdData::EventIdData(const edm::ParameterSet& iConfig, TTree * tree, edm::ConsumesCollector && iC):

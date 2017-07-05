@@ -249,7 +249,11 @@ sam = fixLocalPaths(sam)
     for line in toFile:
         outputFile.write(line)
 	
+<<<<<<< HEAD
     outputFile.close()	
+=======
+    outputFile.close()
+>>>>>>> CFFmain/master
     print "Created new ", ofile
     	
     # move the Samples file to the CommonFSQFramework/Skim/python directory and overwrite the previous one
@@ -268,7 +272,11 @@ sam = fixLocalPaths(sam)
 	for line in toenvFile:
 	    envfile.write(line)
 	    
+<<<<<<< HEAD
 	envfile.close()
+=======
+	envfile.close()    
+>>>>>>> CFFmain/master
 	envdir = moddir.replace("/python","/env")
 	shutil.move(moddir+"/do_"+anaVersion+".sh", envdir+"/do_"+anaVersion+".sh")
 	os.environ['SmallXAnaVersion'] = "CommonFSQFramework.Skim.Samples_"+anaVersion

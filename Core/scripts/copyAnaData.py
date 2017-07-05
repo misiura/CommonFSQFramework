@@ -311,9 +311,15 @@ def main():
                 continue
 
             if "eos/cms" in targetDir:
+<<<<<<< HEAD
 	        cpCommand = ['gfal-cp', srcFile, "srm://srm-eoscms.cern.ch/"+targetFile]
 	    else:
                 cpCommand = ['gfal-cp', srcFile, targetFile]
+=======
+	        cpCommand = ['gfal-copy', srcFile, "srm://srm-eoscms.cern.ch/"+targetFile]
+	    else:
+                cpCommand = ['gfal-copy', srcFile, targetFile]
+>>>>>>> CFFmain/master
             
 	    #cpCommand = ['gfal-ls', srcFile]
 	    #print "would be cpCommand: ", cpCommand

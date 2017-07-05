@@ -43,6 +43,9 @@ void CaloTowerView::fillSpecific(const edm::Event& iEvent, const edm::EventSetup
 	addToIVec("ieta", iCT->ieta());
 	addToIVec("iphi", iCT->iphi());
 
+	addToIVec("ieta", iCT->ieta());
+	addToIVec("iphi", iCT->iphi());
+
 	int hasEB = 0;
 	int hasEE = 0;
 	int hasHB = 0;
